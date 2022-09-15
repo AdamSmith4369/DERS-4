@@ -1,0 +1,112 @@
+
+
+WHAT İS CSS?
+
+1- CSS bir programlama dili değildir. Sadece HTML ile oluşturulan sayfayı tasarımını oluşturmaya yarar.
+
+2- Responsive yapı ise bir web sayfasının hem PC hem Tablet hem de Akıllı Telefonda düzgün bir şekilde gösterilmesine verilen isimdir.
+
+3- CSS Syntax'i;
+
+selector       declaration
+  p           {color:  blue;} şeklindedir.
+              property  value
+
+
+4- 4 çeşit CSS uygulama tipi vardır;
+
+     1- Inline CSS
+--- Doğrudan HTML satırının içersinde kodlama yapılır.
+
+--- Inline CSS'in önceliği vardır. İnline CSS de değişiklik yapıldı ise bu Internal ve External CSS ile değişiklik yapamayız.
+
+     2- Internal CSS
+--- Head etikenin içerisine style attribute yazılır ve oradan sayfa düzenlenir.
+--- Internal CSS de External CSS ile değiştirilemez.
+
+     3- External CSS
+--- En çok kullanılan ve en efektif olan biçimdir. Bu tipte bir CSS dosyası oluşturuluyor ve HTML dosyasına link etiketi ile bağlanır ve CSS dosyası üzerinden tasarı yapılır.
+
+     4- Multiple Styles and Cascade Rule
+--Bunların hepsi aynı işlevi görür ufak farklılıkları vardır.
+
+
+NOT!!!: Id'ler Class'lardan önceliklidir. Class'la verdiğimiz stilleri Id ile değiştirebiliriz.
+
+5- Iframe etiketi ile web sayfamızda başka bir web sayfasını veya bir youtube videosunu gösterebiliriz.
+
+--  "<iframe src="websayfası linki" frameborder="0"></iframe>"
+
+
+-------------------BOX MODEL----------------------
+
+1- Box modeli ile biz web sayfamızı şekillendiriyoruz.
+
+2- Bu modelde en içte content sonra padding, sonra border en dışta ise margin kısmı yer alır.
+
+-------------------CSS SELECTORS------------------
+
+1- Selectorler web sayfamızı stil yapmak için Id veya Classlara verilen isimlerle styling yapma işleminde çağırma işi için kullanılan elemanlardır.
+
+2- "*" yazarsak tamamını alır.
+
+Örn:
+ <p id="p2">External CSS</p>
+
+ #p2{
+    background-color: crimson;
+    color: yellow;}
+
+-- Burada p2 bir selectordür.
+
+--------------------------------------------------
+Örn:
+<p class="ortak">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+.ortak{
+    background-color: darkgray;}
+
+--Burada ortak bir selectordür.
+
+
+2- BORDER-RADIUS etiketi border'ların kenarlarını yuvarlak hale getirir ve daha hoş bir görüntü oluşturur.
+
+Örn: border-radius: 15px; gibi
+
+3- MARGİN etiketi ise web sayfasının 4 kenarından margin yani aralık verir.
+
+Örn: margin: 50px 40px; 
+4 tane px yazarsak 4 köşeyi ayrı ayrı verebiliriz. 2 tane px girersek yukarı aşağı- sağ sol olarak verir.
+
+4- Inherit value: Bu attribute ise içersinde bulunduğu kapasyıcı div'in padding'i ne ise onu alır.
+
+5- text-align: justify; Attribute'ı ise yazıyı iki tarafa yaslar.
+
+6- Gölgelendirme;
+
+A- İsimlerinden de anlaşılacağı gibi text-shadow ile; metinlerimizde gölgelendirme yaparken, 
+Örn:  text-shadow: 6px 6px 4px red;
+ilki horizontal, ikinci vertical, üçüncü ise blurluk veriyor.
+
+B- Box-shadow ile; kutularda (div) gölgelendirme yapmaktayız.
+Örn: box-shadow: 10px 10px 75px red; 
+
+-Birinci değerimiz olan 10px = gölgenin sağ/sol konumunu belirler.
+– İkinci değerimiz olan 10px = gölgenin üst/alt konumunu belirler.
+– Ücüncü değerimiz olan 75px = gölgenin bulanıklık değerini belirler.
+– Dördüncü değerimizde ise renk belirtmekteyiz. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
